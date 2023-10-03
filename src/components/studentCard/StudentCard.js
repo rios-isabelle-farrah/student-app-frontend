@@ -24,9 +24,7 @@ const StudentCard = ({ student }) => {
 
   return (
     <div className="studentCard">
-      <div>
-        <img src={pic} alt="headshot" />
-      </div>
+      <div> <img src={pic} alt="headshot" /> </div>
       <div className="studentCard__name">{`${firstName} ${lastName}`}</div>
       <div className="studentCard__email">Email:{email}</div>
       <div className="studentCard_company">Company:{company}</div>

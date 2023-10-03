@@ -22,11 +22,11 @@ const StudentList = () => {
   //return or jsx 
 
   return (
-    <div>
+    <div  className="studentList">
       {students.map((student) => {
     //  console.log(i)
         return (
-          <div className="studentList">
+          <div>
             <StudentCard student={student}/>
           </div>
         );
