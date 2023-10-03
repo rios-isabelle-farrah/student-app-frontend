@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
+import SearchBar from '../searchBar/SearchBar'
+
+
+
 import StudentCard from "../studentCard/StudentCard";
+
 import './StudentList.scss'
 
 const StudentList = () => {
   //hooks
 
   const [students, setStudents] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("")
 
   //functions
   useEffect(() => {
@@ -22,7 +28,10 @@ const StudentList = () => {
   //return or jsx 
 
   return (
-    <div  className="studentList">
+    <div className="studentList">
+      {/* <input className="studentList__search" placeholder="Search By Name"/> */}
+      <SearchBar />
+
       {students.map((student) => {
     //  console.log(i)
         return (
